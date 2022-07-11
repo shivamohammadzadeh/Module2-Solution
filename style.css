@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --pink:#fab1a0;
+    --black:#3d3d3d;
+    --light-bg:#4b4b4b;
+    --red:#d63031;
+    --yellow:#fdcb6e;
+    --White:#fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 30px;
+    font-family: Rubik;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+  
+p{
+    padding: 15px 5px 0px 5px;
+    font-family: sans-serif serif ;
+    font-size: 20px;
+    position: relative;
+}
+  
+.card{ 
+    background-color: rgb(150, 150, 150);
+    border: 3px solid var(--black);
+    margin-top: 20px; 
+    margin-right: 20px; 
+    padding: 7px;
+    text-align: justify;
+    position: relative;
+   }
+  
+span {
+    font-size: 20px;
+    width: 150px;
+    border:.5px solid var(--black);
+    font-weight: bold;
+    text-align: center;
+    float: right; top :0; right: 0; margin: 0;
+    position: absolute;
+    color: var(--black);
+}
+
+#span1 {
+    background-color: var(--pink);
+}
+
+#span2 {
+    background-color: var(--red);
+    color: var(--White);
+}
+
+#span3{
+    background-color: var(--yellow);
+}
+
+.card:hover SPAN{
+    font-size: 30PX;
+    opacity: 50%;
+}
+
+.card:hover p{
+    font-size: 25PX;
+}
+
+/* media queries */
+
+
+@media (min-width: 992px) {
+   
+    html{
+        font-size: 55%;
+    }
+
+    .col-lg-1 {
+        width: 33.33%;
+        float: left;
+    }
+  }
+  
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+   
+    .col-md-6 {
+      width: 50%;
+      float: left;
+    }
+    .col-md-12 {
+      width: 100%;
+      float: left;
+    }
+  }
+
+
+@media (max-width: 767px) {
+    
+    html{
+        font-size: 50%;
+    }
+
+    .col-sx-12 {
+        float: left;
+      width: 100%;
+    }
+  }
